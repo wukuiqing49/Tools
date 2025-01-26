@@ -1,0 +1,37 @@
+pluginManagement {
+    repositories {
+        google {
+            content {
+                includeGroupByRegex("com\\.android.*")
+                includeGroupByRegex("com\\.google.*")
+                includeGroupByRegex("androidx.*")
+            }
+        }
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+//enableFeaturePreview("VERSION_CATALOGS")
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    versionCatalogs {
+
+        libs{
+            version('compileSdk', '34')
+            version('minSdk', '24')
+            version('targetSdk', '34')
+            version('versionCode', '1')
+            version('versionName', '1.0.0.1')
+
+        }
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "Tools"
+include ':app'
+include ':Lib_net'
