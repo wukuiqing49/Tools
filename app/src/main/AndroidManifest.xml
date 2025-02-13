@@ -2,10 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-
-
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:hardwareAccelerated="false"
         android:name=".CustomApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -19,7 +20,7 @@
         android:theme="@style/Theme.Tools"
         tools:targetApi="31">
         <activity
-            android:name=".TestActivity"
+            android:name=".ui.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.Tools">
@@ -31,6 +32,9 @@
         </activity>
 
         <activity android:name=".ui.NetActivity"/>
+        <activity android:name=".ui.UIActivity"/>
+        <activity android:name=".ui.UISpanActivity"/>
+        <activity android:name=".ui.TextViewUIActivity"/>
 
         <provider
             android:name="com.wkq.net.util.ContextProvider"

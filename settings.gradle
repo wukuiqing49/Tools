@@ -9,6 +9,7 @@ pluginManagement {
         }
         mavenCentral()
         gradlePluginPortal()
+        maven { url'https://jitpack.io' }
     }
 }
 
@@ -29,9 +30,12 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven { url'https://jitpack.io' }
     }
 }
 
 rootProject.name = "Tools"
 include ':app'
 include ':Lib_net'
+include ':mylibrary'
+include ':lib_ui'

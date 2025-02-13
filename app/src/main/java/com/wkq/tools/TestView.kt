@@ -31,4 +31,8 @@ class TestView : ViewModel() {
             resultMutableLiveData.value=NetWork.getInstance().create(Api::class.java).login(hashMap)
         }
     }
+
+    fun test(){
+
+    }
 }

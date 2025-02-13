@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/bt_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="返回" />
+    <com.wu.view.ExpandableTextView
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        app:maxCollapsedLength="80"
+        app:new_collapseHint="收起"
+        app:new_expandHint="全文"
+        app:new_hintColor="@color/color_start"
+        android:layout_height="wrap_content"
+        android:text="18538537389  296606241@qq.com  https://www.baidu.com区分Activity的加载模式，一个Activity A（ActA）就可以说明四种模式的区别"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_2"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="20dp"
+            android:text="更换字体"/>
+        <TextView
+            android:id="@+id/tv_3"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="20dp"
+            android:text="更换字体"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_4"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="20dp"
+            android:text="文字展示中横线"/>
+        <TextView
+            android:id="@+id/tv_5"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="20dp"
+            android:text="文字展示下横线"/>
+    </LinearLayout>
+
+    <TextView
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textSize="20dp"
+        android:text="文字展示中横线打打 大大大爱滴阿文"/>
+
+    <com.wkq.ui.MarqueeTextView
+        android:id="@+id/tv_6"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="这是一个跑马灯展示"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true" />
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+
+            android:textColor="@color/black"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="展示文字Span"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_7"
+            android:textColor="@color/black"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="点击设置Span"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Web展示图文混合效果"/>
+        <WebView
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/web"/>
+    </LinearLayout>
+</LinearLayout>
