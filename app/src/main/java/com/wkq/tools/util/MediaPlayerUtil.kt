@@ -1,4 +1,4 @@
-package util
+package com.wkq.tools.util
 
 /**
  *

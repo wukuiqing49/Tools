@@ -23,9 +23,9 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
-import util.MediaPlayerListener
-import util.MediaPlayerUtil
-import util.OnlineMediaPlayerUtil
+import com.wkq.tools.util.MediaPlayerListener
+import com.wkq.tools.util.MediaPlayerUtil
+import com.wkq.tools.util.OnlineMediaPlayerUtil
 
 /**
  *@Desc:

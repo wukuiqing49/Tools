@@ -1,4 +1,4 @@
-package util;
+package com.wkq.tools.util;
 
 
 
@@ -17,18 +17,6 @@ import androidx.annotation.RequiresApi;
  * @Time: 2025/2/6 16:50
  * @Desc:
  */
-
-
-
-import android.annotation.SuppressLint;
-import android.content.Context;
-import android.media.AudioManager;
-import android.media.MediaPlayer;
-import android.net.Uri;
-import android.os.Build;
-import android.os.Vibrator;
-
-import androidx.annotation.RequiresApi;
 
 public class OnlineMediaPlayerUtil {
     @SuppressLint("StaticFieldLeak")

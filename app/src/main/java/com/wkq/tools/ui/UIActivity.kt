@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
 import com.wkq.tools.databinding.ActivityUiBinding
+import com.wkq.tools.ui.fragment.FragmentTestActivity
 
 /**
  *
@@ -35,6 +36,9 @@ class UIActivity : AppCompatActivity() {
         }
         binding . btSpan . setOnClickListener {
             UISpanActivity.startActivity(this)
+        }
+ binding . btFragment . setOnClickListener {
+     FragmentTestActivity.startActivity(this)
         }
 
     }

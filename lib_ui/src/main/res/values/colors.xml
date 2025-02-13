@@ -2,4 +2,6 @@
 <resources>
     <color name="color_auto_link_default">#303F9F</color>
     <color name="color_auto_high_default">#99777777</color>
+    <color name="color_smart_header_500">#FF6200EE</color>
+    <color name="design_default_color_error">#000000</color>
 </resources>

@@ -3,7 +3,7 @@ package com.wkq.tools.ui
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
-import androidx.activity.viewModels
+
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -42,10 +42,9 @@ class CoroutineActivity : AppCompatActivity() {
 
    //创建方式<一>
     val model=ViewModelProvider.create(this).get(TestViewModel::class.java)
-    //创建方式<二>
-    private val viewModel: TestViewModel by viewModels()
+
     //创建方式<三>
-    private val netViewModel by lazy { TestViewModel() }
+    private val viewModel by lazy { TestViewModel() }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
