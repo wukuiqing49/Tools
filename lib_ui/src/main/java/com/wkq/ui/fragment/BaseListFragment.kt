@@ -115,7 +115,7 @@ abstract class BaseListFragment<D,V:ViewBinding>: Fragment() {
         })
 
         binding.rvContent.layoutManager = getLayoutManager()
-        mAdapter=setAdapter()
+        mAdapter=getAdapter()
         binding.rvContent.adapter = mAdapter
         val header = MaterialHeader(requireActivity())
         header.setColorSchemeResources(

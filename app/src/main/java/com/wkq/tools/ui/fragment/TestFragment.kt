@@ -31,7 +31,6 @@ class TestFragment:BaseListFragment<String, ItemRvBinding> () {
 
     override fun onRefresh() {
        lifecycleScope.launch {
-           delay(3000)
 
            val newData=ArrayList<String>()
            newData.add("新数据1")
@@ -45,12 +44,20 @@ class TestFragment:BaseListFragment<String, ItemRvBinding> () {
            newData.add("新数据9")
            newData.add("新数据10")
            getAdapter().setNewData(newData)
+           delay(200)
+           finishRefresh()
        }
 
-        finishRefresh()
+
     }
 
     override fun onLoadMore() {
+        getAdapter().addItem("添加数据")
+        getAdapter().addItem("添加数据")
+        getAdapter().addItem("添加数据")
+        getAdapter().addItem("添加数据")
+        getAdapter().addItem("添加数据")
+        getAdapter().addItem("添加数据")
         getAdapter().addItem("添加数据")
         finishLoadMore()
     }
