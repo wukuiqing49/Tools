@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/vp2c"
+    android:tag="二級"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="字空i哦啊"/>
+
+    <net.lucode.hackware.magicindicator.MagicIndicator
+        android:layout_marginTop="20dp"
+        android:id="@+id/magicIndicator"
+
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/mLlPart1"
+        />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_below="@+id/magicIndicator"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

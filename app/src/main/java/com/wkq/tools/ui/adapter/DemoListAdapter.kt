@@ -1,6 +1,7 @@
 package com.wkq.tools.ui.adapter
 
 import android.content.Context
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 
@@ -27,5 +28,10 @@ class DemoListAdapter(context:Context):BaseRvAdapter<String, ItemRvBinding>(cont
 
     override fun onBindViewHolder(holder: BaseViewHolder<ItemRvBinding>, position: Int) {
         holder.binding.tvContent.text=getBean(position)
+    }
+
+    override fun onViewDetachedFromWindow(holder: BaseViewHolder<ItemRvBinding>) {
+        super.onViewDetachedFromWindow(holder)
+        Log.e("移除:","onViewDetachedFromWindow")
     }
 }

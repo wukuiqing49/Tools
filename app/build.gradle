@@ -49,9 +49,11 @@ dependencies {
 
     implementation libs.androidx.appcompat
     implementation libs.com.google.android.material
-    implementation libs.androidx.recyclerview
+//    implementation libs.androidx.recyclerview
     implementation libs.androidx.constraintlayout
 
     implementation project(':Lib_net')
     implementation project(':lib_ui')
+    implementation 'com.github.hackware1993:MagicIndicator:1.7.0'
+    implementation 'androidx.viewpager2:viewpager2:1.1.0'
 }

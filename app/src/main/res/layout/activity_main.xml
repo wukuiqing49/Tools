@@ -17,6 +17,12 @@
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:text="UI" />
+    <Button
+        android:id="@+id/bt_vp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="VP" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

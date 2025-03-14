@@ -36,6 +36,7 @@
         <activity android:name=".ui.UISpanActivity"/>
         <activity android:name=".ui.TextViewUIActivity"/>
         <activity android:name="com.wkq.tools.ui.fragment.FragmentTestActivity" />
+        <activity android:name="com.wkq.tools.ui.VpDemoActivity" />
 
         <provider
             android:name="com.wkq.net.util.ContextProvider"

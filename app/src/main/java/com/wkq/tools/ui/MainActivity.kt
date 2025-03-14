@@ -30,6 +30,9 @@ class MainActivity : AppCompatActivity() {
             SharedPreferencesHelper.getInstance(this).setValue("isGrey", !isGrey)
             Toast.makeText(this,"重启生效",Toast.LENGTH_SHORT).show()
         }
+        binding.btVp.setOnClickListener {
+            VpDemoActivity.startActivity(this)
+        }
 
     }
 }
