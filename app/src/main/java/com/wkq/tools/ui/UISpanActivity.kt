@@ -125,7 +125,7 @@ class UISpanActivity : AppCompatActivity() {
         val clickableSpannable = spanUtils.setClickableSpan(
             "起始文本",
             "点击我弹出吐司",
-            "起始文本",
+            "起始文本",getColor(R.color.color_end),
             { content ->
                 Toast.makeText(this@UISpanActivity, content, Toast.LENGTH_SHORT).show()
             }
@@ -136,6 +136,9 @@ class UISpanActivity : AppCompatActivity() {
         binding.tv2.isFocusable = true
         // 设置 MovementMethod 以处理点击事件
         binding.tv2.movementMethod = android.text.method.LinkMovementMethod.getInstance()
+
+        //设置去除高亮按压颜色
+        binding.tv2.setHighlightColor(Color.TRANSPARENT)
 
         // 3. 设置前景色
         val foregroundColorSpannable = spanUtils.setForegroundColorSpan(

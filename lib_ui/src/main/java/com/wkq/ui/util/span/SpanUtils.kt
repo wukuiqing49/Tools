@@ -18,6 +18,7 @@ import android.os.Build
 import android.text.Spannable
 import android.text.SpannableString
 import android.text.SpannableStringBuilder
+import android.text.TextPaint
 import android.text.style.AbsoluteSizeSpan
 import android.text.style.BackgroundColorSpan
 import android.text.style.ClickableSpan
@@ -142,6 +143,7 @@ class SpanUtils private constructor(private val context: Context) {
         startText: String?,
         spanText: String?,
         endText: String?,
+        clickColor:Int,
         clickListener: (content:String) -> Unit
     ): SpannableString {
         val combinedText =
@@ -153,7 +155,16 @@ class SpanUtils private constructor(private val context: Context) {
             override fun onClick(widget: android.view.View) {
                 clickListener(handleNullText(spanText))
             }
+
+            override fun updateDrawState(ds: TextPaint) {
+                super.updateDrawState(ds)
+                //设置文本颜色 color值是外部的，当然可以自己写构造方法传进来
+                ds.setColor(clickColor);
+            //是否显示下划线 false不显示 true显示
+                ds.setUnderlineText(false);
+            }
         }
+
         spannable.setSpan(clickableSpan, startIndex, endIndex, Spannable.SPAN_INCLUSIVE_EXCLUSIVE)
         return spannable
     }

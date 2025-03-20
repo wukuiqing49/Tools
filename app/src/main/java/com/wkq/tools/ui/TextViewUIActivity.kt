@@ -57,7 +57,7 @@ class TextViewUIActivity : AppCompatActivity() {
         binding.tv3.setText(
             getGradientSpan(
                 "修改字体渐变色", getColor(R.color.color_start), getColor(R.color.color_end),
-                true
+                false
             ), TextView.BufferType.SPANNABLE
         )
 
