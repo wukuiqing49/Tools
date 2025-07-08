@@ -18,15 +18,17 @@ import com.wkq.tools.ui.fragment.FragmentTestActivity
  */
 class UIActivity : AppCompatActivity() {
 
-    companion object{
-        fun startActivity(context:Context){
+    companion object {
+        fun startActivity(context: Context) {
             context.startActivity(Intent(context, UIActivity::class.java))
 
         }
     }
+
     val binding: ActivityUiBinding by lazy {
         ActivityUiBinding.inflate(LayoutInflater.from(this))
     }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
@@ -34,11 +36,15 @@ class UIActivity : AppCompatActivity() {
         binding.btTextview.setOnClickListener {
             TextViewUIActivity.startActivity(this)
         }
-        binding . btSpan . setOnClickListener {
+        binding.btSpan.setOnClickListener {
             UISpanActivity.startActivity(this)
         }
- binding . btFragment . setOnClickListener {
-     FragmentTestActivity.startActivity(this)
+        binding.btFragment.setOnClickListener {
+            FragmentTestActivity.startActivity(this)
+        }
+
+        binding.btGradient.setOnClickListener {
+            ColorGradientActivity.startActivity(this)
         }
 
     }

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--    仅仅支持三种颜色  -->
+    <!-- startColor 起始颜色 -->
+    <!-- centerColor 中间颜色 -->
+    <!-- endColor   结束颜色 -->
+    <!-- useLevel 必须为false  true时渐 变色会根据 level 值（范围 0-10000）动态调整显示效果-->
+    <!-- gradientRadius 渐变半径（必须设置） -->
+    <!-- centerX 中心点X坐标（0-1） -->
+    <!--  centerY 中心点Y坐标 -->
+    <gradient
+        android:type="sweep"
+        android:endColor="#3F51B5"
+        android:centerColor="@color/teal_200"
+        android:startColor="#FF4081"
+        android:centerX="0.5"
+        android:centerY="0.5"
+        android:useLevel="false"
+        />
+</shape>

@@ -23,7 +23,7 @@ import java.util.Observer
  *@Time: 2025/1/3 16:12
  *
  */
-class CustomApplication : Application() ,Observer, Application.ActivityLifecycleCallbacks {
+    class CustomApplication : Application() ,Observer, Application.ActivityLifecycleCallbacks {
     override fun onCreate() {
         super.onCreate()
         registerActivityLifecycleCallbacks(this)

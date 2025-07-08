@@ -37,6 +37,7 @@
         <activity android:name=".ui.TextViewUIActivity"/>
         <activity android:name="com.wkq.tools.ui.fragment.FragmentTestActivity" />
         <activity android:name="com.wkq.tools.ui.VpDemoActivity" />
+        <activity android:name="com.wkq.tools.ui.ColorGradientActivity" />
 
         <provider
             android:name="com.wkq.net.util.ContextProvider"
