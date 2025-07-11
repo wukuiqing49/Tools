@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
 import com.wkq.tools.databinding.ActivityUiBinding
+import com.wkq.tools.decrypt.DecryptActivity
 import com.wkq.tools.ui.fragment.FragmentTestActivity
 
 /**
@@ -45,6 +46,12 @@ class UIActivity : AppCompatActivity() {
 
         binding.btGradient.setOnClickListener {
             ColorGradientActivity.startActivity(this)
+        }
+        binding.btGradientUi.setOnClickListener {
+            ColorUIGradientActivity.startActivity(this)
+        }
+ binding.btSo.setOnClickListener {
+     DecryptActivity.startActivity(this)
         }
 
     }

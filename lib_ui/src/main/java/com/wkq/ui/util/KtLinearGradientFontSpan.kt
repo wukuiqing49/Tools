@@ -28,7 +28,7 @@ class KtLinearGradientFontSpan : ReplacementSpan {
 
     constructor()
 
-    constructor(startColor: Int, endColor: Int, leftToRight: Boolean) {
+    constructor(startColor: Int, endColor: Int, leftToRight: Boolean=false) {
         this.startColor = startColor
         this.endColor = endColor
         this.isLeftToRight = leftToRight

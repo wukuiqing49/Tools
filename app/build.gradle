@@ -13,10 +13,33 @@ android {
         targetSdk libs.versions.targetSdk.get().toInteger()
         versionCode 1
         versionName libs.versions.versionName.get()
-
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
             useSupportLibrary true
+        }
+        externalNativeBuild {
+            cmake {
+                cppFlags '-std=c++11'
+            }
+        }
+
+        ndk {
+            //设置支持的SO库架构
+            abiFilters 'armeabi-v7a', 'arm64-v8a'
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['src/main/jniLibs']  // 如果SO库放在app/libs目录下
+        }
+    }
+
+
+
+    externalNativeBuild {
+        cmake {
+            path file('src/main/cpp/CMakeLists.txt')
+            version '3.22.1'
         }
     }
 
@@ -39,6 +62,7 @@ android {
     composeOptions {
         kotlinCompilerExtensionVersion '1.5.1'
     }
+
 
 }
 

@@ -38,6 +38,8 @@
         <activity android:name="com.wkq.tools.ui.fragment.FragmentTestActivity" />
         <activity android:name="com.wkq.tools.ui.VpDemoActivity" />
         <activity android:name="com.wkq.tools.ui.ColorGradientActivity" />
+        <activity android:name="com.wkq.tools.ui.ColorUIGradientActivity" />
+        <activity android:name="com.wkq.tools.decrypt.DecryptActivity" />
 
         <provider
             android:name="com.wkq.net.util.ContextProvider"
