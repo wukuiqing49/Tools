@@ -40,6 +40,7 @@
         <activity android:name="com.wkq.tools.ui.ColorGradientActivity" />
         <activity android:name="com.wkq.tools.ui.ColorUIGradientActivity" />
         <activity android:name="com.wkq.tools.decrypt.DecryptActivity" />
+        <activity android:name="com.wkq.tools.ui.ShapeDrawableActivity" />
 
         <provider
             android:name="com.wkq.net.util.ContextProvider"

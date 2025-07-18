@@ -53,6 +53,9 @@ class UIActivity : AppCompatActivity() {
  binding.btSo.setOnClickListener {
      DecryptActivity.startActivity(this)
         }
+        binding.btShape.setOnClickListener {
+            ShapeDrawableActivity.startActivity(this)
+        }
 
     }
 

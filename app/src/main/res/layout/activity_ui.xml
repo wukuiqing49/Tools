@@ -37,6 +37,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="渐变色UI" />
+    <Button
+        android:id="@+id/bt_shape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ShapeDrawable" />
 
     <Button
         android:id="@+id/bt_so"

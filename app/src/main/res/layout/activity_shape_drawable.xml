@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/bt_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="返回" />
+
+    <TextView
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:text="形状示例代码"/>
+   <LinearLayout
+
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+
+       <View
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:id="@+id/view1"
+           android:layout_margin="10dp"/>
+
+       <View
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:id="@+id/view2"
+           android:layout_margin="10dp"/>
+
+       <View
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:id="@+id/view3"
+           android:layout_margin="10dp"/>
+
+       <View
+
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:id="@+id/view4"
+           android:layout_margin="10dp"/>
+       <View
+
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:id="@+id/view5"
+           android:layout_margin="10dp"/>
+
+       <View
+
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:id="@+id/view6"
+           android:layout_margin="10dp"/>
+
+   </LinearLayout>
+
+    <TextView
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:text="边框"/>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/view7"
+            android:layout_margin="10dp"/>
+
+        <View
+
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/view8"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:text="阴影效果"/>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="horizontal">
+        <View
+
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/view10"
+            android:layout_margin="10dp"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:text="动态设置"/>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="horizontal">
+        <View
+
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:id="@+id/view11"
+            android:layout_margin="10dp"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
